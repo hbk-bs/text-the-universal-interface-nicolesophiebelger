@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>First Date Simulator</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Date RPG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-	<main>
-		<div class="chat-history">
+    <div class="game-container">
+        <div class="game-header">
+            <div class="title-bar">
+                <span class="game-title">♥ FIRST DATE RPG ♥</span>
+                <div class="stats-panel">
+                    <button id="music-toggle" class="pixel-button music-button">♪ ON</button> 
+                    <span class="stat-item">Charm: <span id="charm-score">0</span></span>
+                    <div class="pixel-hearts" id="pixel-hearts-container">
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <main class="game-main">
+            <div class="story-window">
+                <div class="window-border">
+                    <div class="story-display">
+                        <div class="story-text">
+                            <div class="intro-text">
+                                Welcome to First Date RPG!<br><br>
+                                Your romantic adventure awaits...<br><br>
+                                Press START to begin your quest for love!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ui-panel">
+                <div class="choices-window">
+                    <div class="window-border">
+                        <div class="choices-container">
+                            <div class="choices-grid">
+                                </div>
+                            <button class="start-button pixel-button" id="start-story">
+                                <span class="button-text">► START DATE ◄</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-		</div>
-		<form>
-			<input type="text" name="content">
-			<button type="submit">send</button>
-		</form>
-	</main>
-	<script src="index.js"></script>
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <div class="game-over-content window-border">
+                <h2 id="ending-title"></h2>
+                <p id="ending-message"></p>
+                <button class="start-button pixel-button" id="play-again-button">
+                    <span class="button-text">PLAY AGAIN</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="background-music" loop>
+        <source src="valhalla-instrumental-quest-adventure-rpg-journey-electronic-135450.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="index.js"></script>
 </body>
 </html>
