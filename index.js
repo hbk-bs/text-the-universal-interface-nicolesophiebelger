@@ -44,7 +44,9 @@ let messageHistory = {
             - make sure that the decisions decide the fate and the charm-points of the story
             - make it more dramatic, not as boring!
             - make a conclusion after 8 rounds!
-
+            be strict with the mood of the options. one always has to be rude or negative, the second has to be weird and unexpected, the third is romantic and the last one neutral
+            - all moods have to be different and vary in the game
+        
 
             `,
         },
