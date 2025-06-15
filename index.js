@@ -31,7 +31,7 @@ let messageHistory = {
 
             - Keep story text direct and sharp but with enough details (2-4 sentences max).
             - Always provide exactly 4 different choices for what to do next.
-            - Make choices varied: some romantic, some funny, some risky, some safe.
+            - Make choices varied: one option is romantic, one is random and weird, the third one is rude, the fourth is something neutral.
             - Respond based on the choice made: if they choose to be rude, the date responds with irritation and charm decreases. If they flirt, the date might go well and charm increases.
             - Include some "special move" type unexpected options.
             - Tell the story from third person perspective, not as dialogue. Use "you" and "them".
@@ -41,6 +41,10 @@ let messageHistory = {
 			-randomize the date locations every refresh. be creative. Not only café or restaurant.
 			NO NAMES!!!!!
 			- NO ALEX!!!!!!!
+            - make sure that the decisions decide the fate and the charm-points of the story
+            - make it more dramatic, not as boring!
+            - make a conclusion after 8 rounds!
+
 
             `,
         },
@@ -312,7 +316,7 @@ async function endGame(endingType) {
             break;
         case 'failure':
             title = 'Date Failed!';
-            message = 'The date ended abruptly, leaving a bitter taste. It seems you and Alex were not meant to be. Perhaps love is a battlefield after all...';
+            message = 'The date ended abruptly, leaving a bitter taste. It seems you both were not meant to be. Perhaps love is a battlefield after all...';
             break;
         case 'funny':
             title = 'What Just Happened?!';
